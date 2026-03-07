@@ -13,7 +13,7 @@
 </nav>
 
     <h1> Contact me</h1>
-    <div style="display:none">
+  
     <form name="contact" method="POST" data-netlify="true" action="/success"> 
             <input type="hidden" name="form-name" value="contact">
         <div>
