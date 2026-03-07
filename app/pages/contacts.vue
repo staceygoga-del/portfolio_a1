@@ -14,8 +14,9 @@
 
     <h1> Contact me</h1>
   
-    <form name="contact" method="POST" netlify data-netlify="true" action="/success"> 
+    <form name="contact" method="POST" netlify data-netlify="true" data-netlify-honeypot="bot-field" action="/success"> 
             <input type="hidden" name="form-name" value="contact">
+            <input type="hidden" name="bot-field">
         <div>
             <label for="name">  Name: </label>
             <br/>
