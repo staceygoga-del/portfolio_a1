@@ -1,4 +1,16 @@
 <script setup> 
+const handleSubmit =(e) => {
+    const form = e.target
+    const formData = new FormData(form)
+
+    fetch("/", {
+        method:"POST",
+        headers: {"Content-Type":"application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+    }).then(() => {
+        window.location.href = "/success"
+    })
+}
 
 </script>
 
@@ -14,7 +26,7 @@
 
     <h1> Contact me</h1>
   
-    <form name="contact" method="POST" netlify data-netlify="true" data-netlify-honeypot="bot-field" action="/success"> 
+    <form name="contact" method="POST" netlify data-netlify="true" data-netlify-honeypot="bot-field"  @submit.prevent="handleSubmit" action="/success"> 
             <input type="hidden" name="form-name" value="contact">
             <input type="hidden" name="bot-field">
         <div>
