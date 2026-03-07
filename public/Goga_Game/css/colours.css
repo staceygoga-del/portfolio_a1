@@ -1,0 +1,49 @@
+body {
+	background-color: #91E8F3;
+}
+
+h1, h2 {
+	color:#333;
+}
+
+.play {
+	background-color:#86DD79 ;
+	border-radius: 30px;
+	text-align: center;
+}
+
+a:hover {
+	font-weight: bold;
+	color:white;
+}
+
+a {
+	color:#333;
+}
+
+.img{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	border:4px dashed #333;
+	border-radius: 12px;
+	color: white;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+}
+
+.wims {
+	background-color:#86DD79 ;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.dims {
+	background-color:#86DD79 ;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.foot-container {
+	background-color: #86DD79 ;
+}

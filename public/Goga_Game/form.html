@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Stacey Goga">
+	<title>The SimLounge</title>
+	<link rel="icon" href="media/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/fonts.css" type="text/css">
+	<link rel="stylesheet" href="css/nav.css" type="text/css">
+	<link rel="stylesheet" href="css/form.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/layout.css" type="text/css">
+	<link rel="stylesheet" href="css/colours.css" type="text/css">
+	<link rel="stylesheet" href="css/animations.css" type="text/css">
+</head>
+<body>
+
+	<header>
+		<div class="nav-container">
+		<h1>Sign Up For The SimLounge!</h1>
+		<nav>
+
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="expansions.html">Expansion Pack</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="features.html">Features</a></li>
+				<li><a href="form.html">Sign Up</a></li>
+				<li><a href="videos.html">videos</a></li>
+			</ul>
+
+		</nav>
+	</div>
+	</header>
+
+	 <main>
+	 		<fieldset>
+	 		<h2>Sign Up Below!</h2>
+	 		<form action="submit_form,php" method="post">
+
+               <!--Name and Surname-->
+	 			<label for="name">Name and Surname:</label>
+	 			<input type="text" id="name" name="name" required><br>
+                 
+                 <br>
+
+	 			<!--Preferred Username-->
+	 			<label for="username">Preferred Username:</label>
+	 			<input type="text" id="username" name="username" required><br>
+
+                <br>
+
+	 			<!--Email Address-->
+	 			<label for="email">Email Adderess:</label>
+	 			<input type="text" id="email" name="email" required><br>
+
+
+                 <br>
+
+                <!--Phone Number-->
+	 			<label for="phone">Phone Number:</label>
+	 			<input type="tel" id="phone" name="phone" required><br>
+
+
+                  <br>
+
+
+                <!--Date of Birth-->
+	 			<label for="dob">Date of Birth:</label>
+	 			<input type="date" id="dob" name="dob" required><br>
+  
+
+                 <br>  
+
+	 			<!--Preferred Contact Method-->
+	 			<label for="contact-method">Preferred Contact Method:</label>
+	 			<select id="contact-method" name="contact-method" required>
+	 				<option value="" disabled selected>Choose a Contact Method</option>
+	 				<option value="email">Email</option>
+	 				<option value="whatsapp">WhatsApp</option>
+	 				<option value="sms">SMS</option>
+	 			</select><br>
+
+
+                 <br>
+
+                <!--Password-->
+	 			<label for="password">Password:</label>
+	 			<input type="password" id="password" name="password" required><br>
+
+
+                <br>	 			
+
+	 			<!--Confirm Password-->
+	 			<label for="confirm-password">Confirm Password:</label>
+	 			<input type="password" id="confirm-password" name="confirm-password" required><br>
+
+	 			 <br>
+
+	 			 <!--Favourite Expansion Pack-->
+
+                 <label for="favourite-expansion">Favourite Sims 4 Expansion:</label>
+	 			<select id="favourite-expansion" name="favourite-expansion" required>
+
+                    <option value="" disabled selected>Choose a Seasons</option>
+	 			  	<option value="seasons">Seasons</option>
+	 				<option value="city-living">City Living</option>
+	 				<option value="island-living">Island Living</option>
+	 				<option value="cats-dogs">Cats & Dogs</option>
+	 			</select><br>
+
+               <br>
+
+	 			<!--Submit Button-->
+
+	 			<input type="submit" value="Join Now!"><br>
+
+	 			<!--Reset Button-->
+
+	 		    <input type="reset" value="Reset Form">
+
+	 		</form>
+
+	 		</fieldset>
+
+	 </main>
+
+	 <footer>
+	 	<div class="foot-container">
+	      <p>&copy; SimLounge</p>
+	  </div>
+	 </footer>
+</body>
+</html>

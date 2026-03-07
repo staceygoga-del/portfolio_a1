@@ -1,0 +1,57 @@
+
+form {
+	width:100%;
+	max-width:500px;
+	margin:0 auto;
+	padding: 20px;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+}
+
+label {
+	font-weight: bold;
+	display: block;
+	margin-top: 15px;
+}
+
+input[type = "submit"], input[type = "reset"] {
+	background-color: #33a5d6;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-top: 15px;
+}
+
+input[type = "submit"]:hover,
+ input[type = "reset"]:hover {
+ 	background-color: #247da3;
+ }
+
+ h2 {
+ 	text-align:center;
+ 	font-family: 'Josefin Sans', sans-serif;
+ }
+
+ form {
+	margin:40px auto;
+	background-color: #86DD79;
+
+}
+
+fielset {
+	color:#91E8F3;
+}
+
+input:hover,
+select:hover {
+	outline:none;
+	border: 2px solid #62c7b4;
+	box-shadow: 0 0 10px #aee9d1;
+	background-color: #f8ffff;
+	transition: 0.3s ease;
+
+}
+
+ 

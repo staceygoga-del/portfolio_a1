@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+     
+     color:white;
+     font-family: "Montserrat", sans-serif;
+     margin:0;
+ }
+
+ .background {
+     position: relative;
+     min-height: 100vh;
+     background-color: #0f0f0f;
+
+     padding-top:60px;
+ }
+
+ .background::before {
+     content:"";
+     position:fixed;
+     top:-250px;
+     left:-250px;
+     width:1000px;
+     height:1000px;
+     background:radial-gradient(circle at center,rgba(255,0,128,0.35),transparent 70%);
+     filter:blur(150px);
+
+     z-index:0;
+ }
+
+     .background::after {
+         content:"";
+         position:fixed;
+
+         bottom:-250px;
+         right:-250px;
+         width:1000px;
+         height:1000px;
+         background:radial-gradient(circle ,rgba(255,0,128,0.35),transparent 70%);
+         filter:blur(150px);
+         z-index:0;
+     }
+
+     .background > *{
+         position: relative;
+         z-index: 1;
+     }
+
+ .navbar {
+
+     position:sticky;
+     top:20px;
+   
+
+     background:rgba(0, 0, 0, 0.6);
+     backdrop-filter:blur(10px);
+
+     display:flex;
+     justify-content: center;
+     gap:40px;
+
+     width:400px;
+     margin:auto;
+
+     padding:18px 50px;
+     font-size: 20px;
+     border-radius:40px;
+     border:1px solid rgba(255,255,255,0.1);
+
+ }
+
+ .navbar a{
+     text-decoration: none;
+     color:#ff9bcf;
+     font-weight:500;
+     transition:0.3s;
+ }
+
+ .navbar a:hover {
+     color:white;
+ }
+
+
+
+ .hero {
+     font-family: "Montserrat", sans-serif;
+     font-size: 20px;
+
+ }
+
+ .hero-container{
+     display:flex;
+     align-items: center;
+     justify-content: space-between;
+ 
+     max-width:1100px;
+     margin:40px auto;
+     padding: 40px 60px;
+ }
+
+ .heading {
+     font-size: 30px;
+     text-align:center;
+ }
+
+ .hero-text {
+     width:50%;
+     line-height: 1.8;
+ }
+
+ h1,h2 {
+   /* font-family: "Montserrat", sans-serif;*/
+     font-weight: 550;
+     font-optical-sizing: auto;
+ 
+ }
+
+
+ .me{
+     font-family: "Montserrat", sans-serif;
+     font-size: 20px;
+     max-width: 800px;
+     margin: auto;
+     padding-top : 80px;
+     padding-bottom: 80px;
+     text-align:left;
+     line-height:1.7;
+     word-spacing: 5px;
+ }
+
+ .skills {
+     font-family: "Montserrat", sans-serif;
+     margin-left: 20px;
+     margin-right: 20px;
+     padding-bottom: 20px;
+ }
+
+ .skills ul {
+     display:grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 20px;
+     list-style: none;
+     padding:0px;
+    /* text-align:center;
+     border:1px solid #8c2f39;
+     border-radius: 20px;*/
+ }
+
+ .skills li {
+      background:#1a1a1a;
+      padding:18px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.1);
+      color:#ff9bcf;
+      transition:all 0.3s ease;
+ }
+
+ .skills li:hover {
+     background: #222;
+     transform:translateY(-4px);
+     opacity:0.9;
+
+     box-shadow: 0 8px 20px rgba(255,0,128,0.25);
+ }
+
+ .portfolio-photo {
+    /* width: 400px;
+     border-radius :15%;
+     display:block;
+     padding-top: 40px;
+     margin: 20px auto;*/
+     width:260px;
+     border-radius: 20px;
+     margin-left:20px;
+ }
+
+ .weather-card {
+     position: absolute;
+     top:80px;
+     right:40px;
+
+     width:260px;
+     /*margin:0px auto 30px auto;*/
+     padding: 20px;
+    
+
+     background:rgba(255,150,200,0.15);
+     border-radius:15px;
+     border: 1px solid rgba(255,150,200,0.4);
+     backdrop-filter:blur(10px);
+     text-align:center;
+     z-index:5;
+
+ }
+
+ .intro-card {
+     max-width:1100px;
+     margin:60px auto;
+
+     padding:50px;
+
+     background:rgba(0,0,0,0.45);
+     border: 1px solid rgba(255,150,200,0.1);
+
+     border-radius:25px;
+     backdrop-filter:blur(10px);
+ }
+
+ button {
+     background: #e272a8ab;
+     border:none;
+
+     padding:12px 28px;
+     border-radius:12px;
+
+     font-weight:600;
+     color:white;
+     cursor:pointer;
+     transition: all 0.3s ease;
+ }
+
+ button:hover {
+     background:#f47fb9;
+     transform:translateY(-3px);
+     box-shadow:0 6px 20px rgba(255,0,128,0.35);
+
+ }
+
+ .project-card {
+    background:rgba(0,0,0,0.45);
+    border:1px solid rgba(255,150,200,0.2);
+    border-radius:20px;
+
+    padding:30px;
+    margin: 40px auto;
+
+    max-width:900px;
+
+    backdrop-filter:blur(10px);
+ }
+
+ .project-card h2{
+    color:#ff9bcf;
+
+ }
+
+
+button a {
+    text-decoration: none;
+    color:white;
+}
+
+form button {
+    display:block;
+    margin:20px auto;
+    font-size: 17px;
+}
