@@ -14,18 +14,18 @@
 
     <h1> Contact me</h1>
     <form name="contact" method="POST" data-netlify="true"> 
-            <input type="hidden" name="form-name" value=""contact>
+            <input type="hidden" name="form-name" value="contact">
         <div>
             <label for="name">  Name: </label>
             <br/>
-            <input type = "text" id = "name" placeholder=" " required>
+            <input type = "text" name="name" id = "name" placeholder=" " required>
               <!-- <span class = "error" > Please enter your name</span>-->
         </div>
 
         <div> 
             <label for = "email"> Email:</label>
             <br/>
-            <input type = "email" id = "email" placeholder=" " required>
+            <input type = "email" name="email" id = "email" placeholder=" " required>
           <!-- <span class = "error" > Please enter a valid email address</span>-->
         </div>
 
