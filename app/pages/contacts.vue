@@ -1,20 +1,4 @@
 <script setup> 
-const handleSubmit =(e) => {
-    const form = e.target
-    const formData = new FormData(form)
-
-    fetch("/", {
-        method:"POST",
-        headers: {"Content-Type":"application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-            "form-name": "contact",
-            ...Object.fromEntries(formData)
-        }).toString()
-    }).then(() => {
-        window.location.href="/success"
-    })
-}
-
 </script>
 
 <template>
@@ -29,21 +13,21 @@ const handleSubmit =(e) => {
 
     <h1> Contact me</h1>
   
-    <form name="contact" method="POST" netlify data-netlify="true" data-netlify-honeypot="bot-field"  @submit.prevent="handleSubmit" action="/success"> 
+    <form name="contact" method="POST" netlify data-netlify="true"  action="/success"> 
             <input type="hidden" name="form-name" value="contact">
-            <input type="hidden" name="bot-field">
+          
         <div>
             <label for="name">  Name: </label>
             <br/>
             <input type = "text" name="name" id = "name" placeholder=" " required>
-              <!-- <span class = "error" > Please enter your name</span>-->
+             
         </div>
 
         <div> 
             <label for = "email"> Email:</label>
             <br/>
             <input type = "email" name="email" id = "email" placeholder=" " required>
-          <!-- <span class = "error" > Please enter a valid email address</span>-->
+        
         </div>
 
         <div>
