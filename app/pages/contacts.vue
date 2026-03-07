@@ -14,7 +14,7 @@
 
     <h1> Contact me</h1>
   
-    <form name="contact" method="POST" data-netlify="true" action="/success"> 
+    <form name="contact" method="POST" netlify data-netlify="true" action="/success"> 
             <input type="hidden" name="form-name" value="contact">
         <div>
             <label for="name">  Name: </label>
@@ -32,7 +32,7 @@
 
         <div>
             <label for = "message"> Message: </label>
-            <textarea id="message" name="message" placeholder="Write yout message"> </textarea>
+            <textarea id="message" name="message" placeholder="Write yout message" required> </textarea>
         </div>
     
         <button type ="submit">Submit</button>
