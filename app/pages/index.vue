@@ -1,5 +1,6 @@
 
 <script setup> 
+/*Stacey Goga u25120702*/
 import {ref,onMounted} from 'vue'
 
 const temperature  = ref("")
