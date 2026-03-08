@@ -179,6 +179,7 @@ body {
      position: absolute;
      top:80px;
      right:40px;
+     margin-top:80px;
 
      width:260px;
      /*margin:0px auto 30px auto;*/
@@ -255,4 +256,13 @@ form button {
     display:block;
     margin:20px auto;
     font-size: 17px;
+}
+
+@media(max-width: 768px) {
+  
+
+    .navbar {
+        
+        gap:30px;
+    }
 }
